@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:state_tutorial/domain/model/note_model.dart';
 
 class DataBaseService {
+  // Firestoreのnotesコレクションへアクセスするゲッター
   CollectionReference get notesCollection =>
       FirebaseFirestore.instance.collection('notes');
 
@@ -15,6 +16,7 @@ class DataBaseService {
     });
   }
 
+  // Map<String, dynamic>と同じことをしている.
   List<NoteModel> noteFromFirestore(QuerySnapshot snapshot) {
     return snapshot.docs.map((e) {
       return NoteModel(
@@ -27,6 +29,7 @@ class DataBaseService {
     }).toList();
   }
 
+  // Firestoreから全てのデータを取得する.
   Stream<List<NoteModel>> listNotes() {
     return notesCollection.snapshots().map(noteFromFirestore);
   }
