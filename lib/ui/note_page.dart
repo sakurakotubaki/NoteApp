@@ -4,7 +4,7 @@
 // import 'package:state_tutorial/model/note_model.dart';
 // import 'package:state_tutorial/theme/my_color.dart';
 // import 'package:state_tutorial/ui/create_note.dart';
-// import 'package:state_tutorial/ui/edit_note.dart';
+// import 'package:state_tutorial/ui/detail.dart';
 // import 'package:state_tutorial/utils/note_repository.dart';
 //
 // class NotePage extends StatelessWidget {

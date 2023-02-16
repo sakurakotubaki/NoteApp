@@ -3,7 +3,7 @@ import 'package:state_tutorial/domain/model/database_service.dart';
 import 'package:state_tutorial/domain/model/note_model.dart';
 import 'package:state_tutorial/theme/my_color.dart';
 import 'package:state_tutorial/ui/create_note.dart';
-import 'package:state_tutorial/ui/edit_note.dart';
+import 'package:state_tutorial/ui/note_detail.dart';
 
 class NoteRead extends StatelessWidget {
   const NoteRead({Key? key}) : super(key: key);
